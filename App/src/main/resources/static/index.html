@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Chart</title>
+    <!-- Load Chart.js and the adapter from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.1.0"></script>
+    <link rel="stylesheet" href="style.css"> <!-- Optional for styling -->
+</head>
+<body>
+    <h1>Weather Data Chart</h1>
+    
+    <!-- Form for city input -->
+    <form id="cityForm">
+        <input type="text" id="cityInput" placeholder="Enter city name" required />
+        <button type="submit">Get Weather Data</button>
+    </form>
+
+    <canvas id="weatherChart" width="400" height="200"></canvas>
+    <!-- Load app.js as a module -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
